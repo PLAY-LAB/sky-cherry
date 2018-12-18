@@ -97,7 +97,7 @@
       </div>
     </div>
     <hr>
-    <div v-html="question.description"></div>
+    <div class="questionEditor" v-html="question.description"></div>
     <div class="mb-3">
       <div class="question-tag" v-for="tag in question.tags" :key="tag">
         {{ tag }}
@@ -140,7 +140,7 @@
           </b-col>
         </b-row>
         <b-row class="mt-3 mx-3">
-          <div v-html="answer.description"></div>
+          <div class="questionEditor" v-html="answer.description"></div>
         </b-row>
         <hr v-bind:style="{ borderColor: '#efefef' }">
         <b-row>
